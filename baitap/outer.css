@@ -1,0 +1,45 @@
+.color-red {
+    color: red;
+}
+
+#color-green {
+    color: green;
+}
+
+.binh {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+
+.ngoc {
+    width: 100vw;
+    height: 200px;
+    background: url(../test/63454_laptop_acer_gaming_nitro_5_tiger_9.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box {
+    background-color: green;
+    margin-top: 10px;
+    border: 10px solid;
+    padding: 30px;
+    text-align: center;
+}
+
+.box-2 {
+    margin-top: 10px;
+    border: 10px dashed white;
+    background-color: red;
+    text-align: right;
+    padding: 30px;
+    color: white;
+}
+
+.minhngoc {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
