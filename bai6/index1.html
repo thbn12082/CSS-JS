@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* div+p {
+            background-color: aqua;
+        } */
+        /* div>p {
+            background-color: aqua;
+        } */
+        /* nên viết kiểu này chứ không phải là .parent h3 để code rõ ràng hơn, tránh xung đột */
+        .parent .children h3 {
+            background-color: rgb(92, 17, 162);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p>Nội dung 0</p>
+    <div>
+        <p>Nội dung 1 </p>
+        <p>Nội dung 2 </p>
+    </div> -->
+    <!-- <h2>Nội dung thẻ h2</h2> -->
+    <!-- <p>Nội dung thẻ 3</p>
+    <p>Nội dung thẻ 4</p> -->
+
+
+    <h3>
+        Nội dung khác
+    </h3>
+    <div class="parent">
+        <div class="children">
+            <h3>Nội dung thứ 1</h3>
+        </div>
+        <div class="children">
+            <h3>Nội dung thứ 2</h3>
+        </div>
+        <div class="children">
+            <h3>Nội dung thứ 3</h3>
+        </div>
+        <div class="children">
+            <h3>Nội dung thứ 4</h3>
+        </div>
+    </div>
+</body>
+
+</html>
