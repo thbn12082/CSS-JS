@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thebinh</title>
+    <style>
+        .content {
+            background-color: red;
+            margin-top: 50px;
+            padding: 20px;
+            border: solid blue 2px;
+            border-radius: 8px;
+            position: absolute;
+            /* đặt thế này để định vị tọa độ cho con */
+            overflow: hidden;
+        }
+
+        /* sẽ css cho nội dung bên trong class */
+        .content::before {
+            content: "";
+            width: 150px;
+            height: 150px;
+            display: block;
+            /* đối với thẻ before và after phải để display là inline-block hoặc block lúc ấy mới chỉnh được width và heigth */
+            border-radius: 50%;
+            border: solid 2px black;
+            background-color: wheat;
+            position: absolute;
+            left: -30px;
+            top: -30px;
+        }
+
+        .content::after {
+            background-color: aquamarine;
+            content: "";
+            display: block;
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            /* absolute có z-index là 0 */
+            right: -50px;
+            bottom: -30px;
+        }
+
+        .content .inner-content {
+            background-color: blue;
+            /* background-color: red; */
+            color: white;
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 8px;
+            /* nếu không để position thì là static mà static thì z-index là -1 */
+            position: relative;
+            z-index: 1;
+            /* phải set z-index tại vì nếu tất cả z-index = 0 => cái này ghi sau thì đè lên cái in đầu */
+            /* nếu để là relative thì z-index là 0 */
+        }
+
+        .content .inner-content::first-letter {
+            font-size: 30px;
+            color: black;
+        }
+
+        .content .inner-content::first-line {
+            text-transform: uppercase;
+        }
+
+        .content-x {
+            background-color: gray;
+            border: solid 2px black;
+            content: "";
+            width: 90%;
+            height: 90%;
+            border-radius: 8px;
+            padding: 50px;
+        }
+
+        .content1::before {
+            content: "1";
+            background-color: rebeccapurple;
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid black 2px;
+            position: absolute;
+            border-radius: 8px;
+            left: 20px;
+        }
+
+        .content1::after {
+            background-color: rebeccapurple;
+            width: 150px;
+            height: 100px;
+            content: "2";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid black 2px;
+            right: 20px;
+            position: absolute;
+            border-radius: 8px;
+            right: 50px;
+        }
+
+        .top-right {
+            position: absolute;
+            /* Định vị tuyệt đối */
+            top: 10px;
+            /* Cách cạnh trên 10px */
+            right: 10px;
+            /* Cách cạnh phải 10px */
+            width: 50px;
+            /* Chiều rộng */
+            height: 50px;
+            /* Chiều cao */
+            background-color: green;
+            /* Màu nền */
+            color: white;
+            /* Màu chữ */
+            display: flex;
+            /* Căn giữa nội dung */
+            justify-content: center;
+            /* Căn giữa nội dung ngang */
+            align-items: center;
+            /* Căn giữa nội dung dọc */
+            border-radius: 5px;
+            /* Bo góc */
+            font-size: 16px;
+            /* Kích thước chữ */
+        }
+
+        .top-right::before {
+            content: "2";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-x">
+        <div class="content1">
+        </div>
+        <div class="top-right"></div>
+    </div>
+    <div class="content">
+        <div class="inner-content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, repellendus inventore nostrum
+                tempora
+                voluptatem sapiente fugit quasi veniam est ab sit tempore nulla! Vitae iusto laborum, quo temporibus
+                consectetur sapiente. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt facilis, non
+                exercitationem recusandae esse distinctio! Ipsum voluptatum inventore alias et quisquam officiis eos,
+                cum
+                porro quis impedit ut explicabo natus?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus omnis exercitationem accusamus modi id,
+                consequuntur ex odit commodi fugiat, unde cumque perspiciatis quod nam animi sed ducimus dolorum, alias
+                magni?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem omnis corrupti recusandae reprehenderit
+                molestias explicabo assumenda exercitationem beatae perspiciatis id quaerat incidunt hic perferendis
+                esse
+                maiores non sed, ad veniam!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aspernatur at mollitia dolorem
+                corrupti
+                ab nostrum quis beatae excepturi dolores, consectetur aliquam sequi modi, libero sint sed id asperiores
+                tempora.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
