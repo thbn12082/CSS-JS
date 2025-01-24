@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: red solid 5px;
+        }
+
+        .the-a {
+            background-color: yellow;
+            color: rgb(2, 15, 26);
+            text-align: center;
+            height: 150px;
+            padding: 30px;
+            float: left;
+        }
+
+        .the-b {
+            background-color: blue;
+            color: rgb(2, 15, 26);
+            text-align: center;
+            height: 250px;
+            padding: 30px;
+            float: right;
+            /* clear: left; */
+        }
+
+        .the-c {
+            background-color: cadetblue;
+            color: rgb(2, 15, 26);
+            text-align: center;
+            padding: 30px;
+            height: 350px;
+            float: right;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="the-a">
+            <p>Phần tử A</p>
+        </div>
+        <div class="the-b">
+            <p>Phần tử B</p>
+        </div>
+        <div class="the-c">
+            <p>Phần tử C</p>
+        </div>
+        <div class="clear-both"></div>
+    </div>
+</body>
+
+</html>
