@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.box {
+    background-color: aquamarine;
+    width: calc(25% - 10px);
+    height: 50px;
+    float: left;
+    /* border: solid 2px black; */
+    margin-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box:nth-child(4) {
+    margin-right: 0px;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 25px;
+}

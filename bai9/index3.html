@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        @media screen and (max-width: 1200px) {
+            header {
+                background-color: aquamarine;
+                color: black;
+                width: 100%;
+                height: 10%;
+                position: relative;
+                margin-bottom: 5px;
+            }
+
+            main .content {
+                background-color: blueviolet;
+                color: black;
+                width: 80%;
+                height: 40%;
+                float: left;
+                position: relative;
+                margin-bottom: 5px;
+            }
+
+            main .aside {
+                background-color: cadetblue;
+                width: 20%;
+                height: 40%;
+                float: left;
+                position: relative;
+                margin-bottom: 5px;
+            }
+
+            main .aside p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding-bottom: 25px;
+            }
+
+            main .content p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding-bottom: 25px;
+            }
+
+            .box {
+                clear: both;
+            }
+
+            .box1,
+            .box2,
+            .box3 {
+                background-color: yellow;
+                height: 25%;
+                width: calc(25% - 5px);
+                float: left;
+                margin-bottom: 5px;
+                margin-right: 5px;
+                position: relative;
+            }
+
+            .box4 {
+                background-color: yellow;
+                height: 25%;
+                width: calc(25% - 1px);
+                float: left;
+                margin-bottom: 5px;
+                position: relative;
+            }
+
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding-bottom: 25px;
+            }
+
+
+            footer {
+                clear: left;
+                background-color: aquamarine;
+                padding-bottom: 25px;
+                position: relative;
+                width: 100%;
+                height: 10%;
+            }
+
+            footer p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding-bottom: 25px;
+            }
+        }
+    </style>
+
+
+    <header>
+        <p>HEADER</p>
+    </header>
+    <main>
+        <div class="content">
+            <p>Content</p>
+        </div>
+        <div class="aside">
+            <p>Aside</p>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>Box 1</p>
+            </div>
+            <div class="box2">
+                <p>Box 2</p>
+            </div>
+            <div class="box3">
+                <p>Box 3</p>
+            </div>
+            <div class="box4">
+                <p>Box 4</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>FOOTER</p>
+    </footer>
+</body>
+
+</html>
