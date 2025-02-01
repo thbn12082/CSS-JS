@@ -1,0 +1,251 @@
+/* header */
+.header {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 /10%);
+}
+
+.header-top {
+    background-color: var(--color-one);
+    color: var(--color-text);
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+}
+
+.header-main .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-main .inner-menu ul {
+    display: flex;
+}
+
+.header-main .inner-menu ul li {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header-main .inner-logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-main .inner-logo span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-main .inner-logo a {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.header-main .inner-contact {
+    font-size: 18px;
+    color: var(--color-text);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-main .inner-social ul {
+    display: flex;
+    color: var(--color-text);
+}
+
+.header-main .inner-social ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+/* end header */
+
+/* buttons */
+.button {
+    background-color: var(--color-text);
+    color: aliceblue;
+    padding: 15px 40px;
+    border: solid 2px white;
+    border-radius: 45px;
+    font-size: 25px;
+}
+
+.button-one {
+    background: var(--color-text);
+    border-color: var(--color-one);
+}
+
+.button-one:hover {
+    color: var(--color-text);
+    background-color: aliceblue;
+}
+
+/* end buttons */
+
+/* section-one */
+.section-one {
+    background-color: lightskyblue;
+    /* padding-top: 100px; */
+    padding-bottom: 20px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 /10%);
+    border-radius: 15px;
+}
+
+.section-one .inner-wrap {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.section-one .inner-image {
+    margin-top: 150px;
+    margin-left: 100px;
+    position: relative;
+
+}
+
+.section-one .inner-content .inner-title {
+    padding-top: 250px;
+    font-size: 80px;
+    color: var(--color-text);
+    padding-bottom: 40px
+}
+
+.section-one .inner-content .inner-desc {
+    font-size: 40px;
+    color: var(--color-text);
+    padding-bottom: 50px
+}
+
+
+.section-one .inner-content .inner-list {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.section-one .inner-content .inner-item {
+    padding-right: 100px;
+    width: 50%;
+    display: flex;
+    align-content: center;
+}
+
+.section-one .inner-content .inner-list .inner-item span {
+    font-size: 40px;
+    padding-top: 0px;
+}
+
+.section-one .inner-wrap .inner-image .inner-sale {
+    background-color: var(--color-two);
+    padding: 30px 45px;
+    border: solid white 2px;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -40px;
+    right: -20px;
+}
+
+.section-one .inner-wrap .inner-sale :nth-child(1) {
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--color-text);
+}
+
+.section-one .inner-wrap .inner-sale :nth-child(2) {
+    font-size: 20px;
+}
+
+/* end section-one */
+
+
+
+/* section-two */
+.section-two {
+    margin-top: 0px;
+}
+
+.section-two .inner-wrap .inner-box {
+    width: calc(100%/3 - 20px);
+    /* width để bao nhiêu cũng đc còn height auto để 100% */
+    height: 100%;
+    aspect-ratio: 4/3;
+    /* tỉ lệ w/h của element*/
+    position: relative;
+    overflow: hidden;
+    /* ảnh tràn ra sẽ bị cắt đi */
+}
+
+
+.section-two .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-two .inner-wrap .inner-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* cái này là để ảnh tự co dãn hết w/h mà không bị vỡ */
+    transition: all 1;
+    /* cái này để ảnh di chuyển 1s */
+}
+
+.section-two .inner-box:hover img {
+    transform: scale(1.1);
+    /* zoom lên 1.1 lần */
+}
+
+.section-two .inner-box .inner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-two .inner-box .inner-tag {
+    margin-left: -30px;
+    color: var(--color-text);
+    background-color: var(--color-two);
+    width: 70%;
+    height: 25%;
+    border: solid 2px white;
+    border-radius: 45px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 27px;
+    padding-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.section-two .inner-box .inner-title {
+    color: var(--color-text);
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* end section-two */
