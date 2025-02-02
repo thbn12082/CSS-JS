@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <title>Hello, world!</title>
+    <style>
+        .modal-content .modal-header .inner-image {
+            margin-top: -49px;
+            height: 166px;
+            width: 184px;
+            margin-bottom: -31px;
+        }
+
+        .modal-content .modal-header .inner-title {}
+
+        .modal-content .modal-header {
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content .modal-header .close {
+            position: absolute;
+            top: -3px;
+            right: 4px;
+            background: darkred;
+            color: white;
+            border-radius: 50%;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            /* bootstrap để close nhạt => opacity giúp nền đậm  */
+            width: 30px;
+            height: 30px;
+        }
+
+        .button-submit {
+            background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+            width: 100%;
+            color: white;
+            padding: 16px;
+            border-radius: 37px;
+        }
+
+        .button-call {
+            background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08 100%);
+            padding: 10px 30px;
+            color: antiquewhite;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 37px;
+            left: 0;
+            bottom: 0;
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Modal -->
+
+    <div class="container"><button type="button" data-toggle="modal" data-target="#exampleModal" class="button-call">
+            Liên hệ với tôi
+        </button></div>
+
+
+    <div class="modal fade modal-form" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="inner-image" src="logo.svg" alt="logo">
+                    <h5 class="inner-title">Liên hệ với chúng tôi</h5>
+                    <p class="inner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="button-close">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Họ và tên *">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Số điện thoại *">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Lĩnh vực kinh doanh *">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div>
+
+                                        <button type="submit" class="button-submit">Gửi yêu cầu</button>
+                                    </div>
+
+                                </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+
+    <script src="./assets/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="./assets/bootstrap/popper.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
