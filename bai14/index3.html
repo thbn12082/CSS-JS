@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // monHoc = [
+        //     {
+        //         ten: "toan",
+        //         diem: 8.6
+        //     },
+        //     {
+        //         ten: "ly",
+        //         diem: 9.2
+        //     },
+        //     {
+        //         ten: "hoa",
+        //         diem: 8.5
+        //     },
+        //     {
+        //         ten: "tin",
+        //         diem: 7.8
+        //     }
+        // ];
+        // let danhSachMoi = monHoc.map((item, index, arr) => {
+        //     let hocLuc = "";
+        //     if (item.diem >= 8) {
+        //         hocLuc = "Gioi";
+        //     }
+        //     else if (item.diem >= 7 && item.diem < 8) {
+        //         hocLuc = "Kha";
+        //     } else {
+        //         hocLuc = "Trung Binh";
+        //     }
+        //     return {
+        //         ten: item.ten,
+        //         hocLuc: hocLuc
+        //     };
+        // });
+        // console.log(danhSachMoi);
+
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        let tong = numbers.reduce((total, item) => {
+            console.log(total);
+            return total + item;
+        }, 0);
+
+        let trungBinh = numbers.reduce((total, item) => {
+            console.log(total);
+            return total + item / numbers.length;
+        }, 0);
+
+        console.log("--------------------------------------");
+        console.log(tong);
+        console.log("--------------------------------------");
+        console.log(trungBinh);
+
+        // let trungBinh = tong / numbers.length;
+        // console.log(trungBinh);
+    </script>
+</body>
+
+</html>

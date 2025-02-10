@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // các cách biểu diễn hàm trong JS
+        // function sum(a, b) {
+        //     return console.log(a + b);
+        // }
+        // sum(10, 20);
+
+        // function tinhTong() {
+        //     console.log(arguments);
+        //     let tong = 0;
+        //     for (i of arguments) {
+        //         tong += parseInt(i);
+        //         // console.log(typeof i);
+        //     }
+        //     return tong;
+        // }
+
+        // let ketQua = tinhTong(10, 20, 30, 40, 50);
+        // console.log(ketQua);
+
+        // const tinhTong = function () {
+        //     let tong = 0;
+        //     for (i of arguments) {
+        //         tong += parseInt(i);
+        //     }
+        //     return tong;
+        // }
+        // let kq = tinhTong(10, 20, 30, 40);
+        // console.log(kq);
+
+
+        // const tinhTong = (a, b) => {
+        //     return a + b;
+        // }
+        // console.log(tinhTong(10, 20));
+
+        const tinhTong = (...test) => {
+            let tong = 0;
+            for (i of test) {
+                tong += parseInt(i);
+            }
+            return tong;
+        }
+        console.log(tinhTong(10, 20, 30, 40));
+
+    </script>
+</body>
+
+</html>

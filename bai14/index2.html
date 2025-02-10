@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var mang = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // var tong = 0;
+        // for (i of mang) {
+        //     if (parseInt(i) % 2 == 0) {
+        //         tong += parseInt(i);
+        //     }
+        // }
+        // console.log(tong);
+        // function tong(n) {
+        //     let tong = 0;
+        //     for (var i = 1; i <= n; i++) {
+        //         tong += parseFloat(i / n);
+        //     }
+        //     return tong;
+        // }
+        // console.log(tong(parseInt(prompt("Nhập 1 số vào"))));
+
+        monHoc = [
+            {
+                ten: "toan",
+                diem: 2
+            },
+            {
+                ten: "ly",
+                diem: 2
+            },
+            {
+                ten: "hoa",
+                diem: 2
+            },
+            {
+                ten: "van",
+                diem: 2
+            },
+            {
+                ten: "anh",
+                diem: 2
+            }
+        ]
+
+        // const timDiemTot = monHoc.filter(function (value, index, arr) {
+        //     return value.diem > 2;
+        // });
+
+        // console.log(timDiemTot);
+
+        const chuyenTen = monHoc.map(function (value, index, arr) {
+            arr[index].diem = 3;
+        });
+
+        console.log(monHoc);
+
+    </script>
+    <script>
+        let number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        number.forEach(item => {
+            console.log(item * 2);
+        }); 
+    </script>
+</body>
+
+</html>

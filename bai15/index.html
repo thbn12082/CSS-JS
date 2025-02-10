@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light {
+            background: lightblue;
+        }
+
+        .dark {
+            background: slategray;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="light" id="box">Nội dung thẻ div</div>
+
+    <ul id="menu">
+        <li>Muc 1</li>
+        <li>Muc 2</li>
+        <li>Muc 3</li>
+    </ul>
+
+    <script>
+        const box = document.getElementById("box");
+        console.log(box);
+        box.classList.add("dark");
+        console.log(box);
+
+        const menu = document.getElementById("menu");
+        console.log(menu);
+    </script>
+</body>
+
+</html>
